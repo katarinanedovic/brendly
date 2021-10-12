@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product description</title>
+    <link rel="stylesheet" href="../style.css" />
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+      $(function () {
+        $("#header").load("../header.html");
+        $("#footer").load("../footer.html");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="header"></div>
+
+    <main>
+      <div class="photo-productd">
+        <img src="../img/Group 573.png" alt="" />
+      </div>
+
+      <div class="product-desc">
+        <p class="title">Irving</p>
+        <p class="price">2890 RSD</p>
+        <div class="colors">
+          <span class="color color-1"></span>
+          <span class="color color-2"></span>
+          <span class="color color-3"></span>
+          <span class="color color-4"></span>
+          <span class="color color-5"></span>
+          <span class="color color-6"></span>
+          <span class="color color-7"></span>
+          <span class="color color-8"></span>
+        </div>
+        <div class="sizes">
+          <p class="pick-size">Izaberi velicinu</p>
+          <div class="size">
+            <span class="size-type">XS</span>
+            <span class="size-type">S</span>
+            <span class="size-type">M</span>
+            <span class="size-type">L</span>
+            <span class="size-type">XL</span>
+            <span class="size-type">2XL</span>
+            <span class="size-type">3XL</span>
+          </div>
+          <img class="size-explanation" src="../img/Group 87.png" alt="" />
+        </div>
+
+        <button class="add-to-shop">DODAJ U KORPU</button>
+        <p class="info">Informacije o proizvodu</p>
+        <p class="info">Informacije o dostavi</p>
+      </div>
+    </main>
+
+    <div id="footer"></div>
+  </body>
+</html>

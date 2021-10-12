@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@300;500&display=swap");
+body {
+  font-family: "Spartan", sans-serif;
+}
+
+/* Main */
+main {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 5rem;
+  color: #121212;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.price {
+  font-size: 24px;
+}
+
+.color {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.color-1 {
+  background-color: #000000;
+}
+.color-2 {
+  background-color: #cccfde;
+}
+.color-3 {
+  background-color: #5f5f53;
+}
+.color-4 {
+  background-color: #a72a2a;
+}
+.color-5 {
+  background-color: #429a5b;
+}
+.color-6 {
+  background-color: #2f2b64;
+}
+.color-7 {
+  background-color: #acac8b;
+}
+.color-8 {
+  background-color: #ffffff;
+}
+
+.pick-size {
+  font-size: 18px;
+}
+
+.size-type {
+  width: 42px;
+  height: 42px;
+  font-size: 12px;
+  padding: 0.8rem;
+  border: 1px solid #cccfde;
+}
+
+.size-type:hover {
+  background-color: #121212;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.size-explanation {
+  margin-top: 2rem;
+}
+
+.info {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 1.5rem;
+}
+
+.add-to-shop {
+  width: 390px;
+  color: #ffffff;
+  height: 60px;
+  background-color: #121212;
+  margin-top: 1rem;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+@media all and (max-width: 1000px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+}

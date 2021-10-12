@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@300;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Spartan", sans-serif;
+}
+
+.banner {
+  width: 100%;
+  height: 39rem;
+  margin-top: 1rem;
+  background-image: url("../img/Mask Group.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner-text {
+  color: #ffffff;
+  font-size: 72px;
+  padding-left: 7rem;
+  padding-top: 1rem;
+  font-weight: bold;
+}
+
+.check-store {
+  background-color: #ffffff;
+  color: #c5962b;
+  width: 257px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  margin: 1rem 0 0 7.5rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.categorie-section {
+  text-align: center;
+}
+
+.categorie-title {
+  padding: 2rem;
+  letter-spacing: 0.2rem;
+  font-size: 22px;
+}
+
+.categories {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.categorie {
+  font-size: 16px;
+}
+
+.about {
+  display: flex;
+  margin-top: 4rem;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.about-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 14px;
+  background-color: #f8f8f8;
+  width: 697px;
+  height: 400px;
+  line-height: 1rem;
+  letter-spacing: 0.1rem;
+  color: #000000;
+}
+
+.about-description .title {
+  font-size: 20px;
+  margin-bottom: 1rem;
+  letter-spacing: 0.2rem;
+  color: #000000;
+}
+
+.products-section {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.products-title {
+  padding-bottom: 2rem;
+  font-size: 22px;
+  text-align: center;
+  color: #000000;
+}
+
+.products {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  color: #000000;
+}
+
+.product-desc {
+  padding-top: 1rem;
+  font-size: 14px;
+}
+
+.product-price {
+  font-size: 10px;
+}
+
+.look-at-products {
+  width: 197px;
+  height: 50px;
+  border: 1px solid black;
+  align-self: center;
+  background-color: #ffffff;
+  margin-top: 3rem;
+  cursor: pointer;
+  border-radius: 4%;
+  letter-spacing: 0.1rem;
+}
+
+.customers {
+  margin-top: 1rem;
+}
+
+.customers-title,
+.social-media-title {
+  text-align: center;
+  font-size: 22px;
+  color: #000000;
+  padding: 2rem;
+}
+
+.customer-photos {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.customer-photos img {
+  flex: 1;
+}
+
+.social-media-content {
+  display: flex;
+  justify-content: center;
+}
+
+@media all and (max-width: 1000px) {
+  .categories,
+  .products,
+  .about,
+  .customer-photos {
+    flex-direction: column;
+  }
+}
