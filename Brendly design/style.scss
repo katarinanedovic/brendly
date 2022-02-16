@@ -1,0 +1,167 @@
+@import "../variables.scss";
+
+@mixin set-zero() {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  @include set-zero();
+}
+
+body {
+  font-family: $default-font;
+}
+
+.banner {
+  width: 100%;
+  height: 39rem;
+  margin-top: $default-size;
+  background-image: url("../img/Mask Group.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: $default-position;
+}
+
+.banner-text {
+  color: map-get($colors, white);
+  font-size: 72px;
+  padding-left: $default-size * 7;
+  padding-top: $default-size;
+  font-weight: bold;
+}
+
+.check-store {
+  background-color: map-get($colors, white);
+  color: #c5962b;
+  width: 257px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  margin: $default-size 0 0 7.5rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.categorie-section {
+  text-align: $default-position;
+}
+
+.categorie-title {
+  padding: $default-size * 2;
+  letter-spacing: 0.2rem;
+  font-size: 22px;
+}
+
+.categories {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.categorie {
+  font-size: 16px;
+}
+
+.about {
+  display: flex;
+  margin-top: 4rem;
+  flex-direction: row;
+  justify-content: $default-position;
+}
+
+.about-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: $default-position;
+  font-size: 14px;
+  background-color: #f8f8f8;
+  width: 697px;
+  height: 400px;
+  line-height: $default-size;
+  letter-spacing: 0$default-size;
+  color: map-get($colors, black);
+
+  .title {
+    font-size: 20px;
+    margin-bottom: $default-size;
+    letter-spacing: 0.2rem;
+    color: map-get($colors, black);
+  }
+}
+
+.products-section {
+  text-align: $default-position;
+  margin-top: $default-size * 2;
+}
+
+.products-title {
+  padding-bottom: $default-size * 2;
+  font-size: 22px;
+  text-align: $default-position;
+  color: map-get($colors, black);
+}
+
+.products {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: $default-position;
+  text-align: $default-position;
+  color: map-get($colors, black);
+}
+
+.product-desc {
+  padding-top: $default-size;
+  font-size: 14px;
+}
+
+.product-price {
+  font-size: 10px;
+}
+
+.look-at-products {
+  width: 197px;
+  height: 50px;
+  border: 1px solid black;
+  align-self: $default-position;
+  background-color: map-get($colors, white);
+  margin-top: $default-size * 3;
+  cursor: pointer;
+  border-radius: 4%;
+  letter-spacing: 0$default-size;
+}
+
+.customers {
+  margin-top: $default-size;
+}
+
+.customers-title,
+.social-media-title {
+  text-align: $default-position;
+  font-size: 22px;
+  color: map-get($colors, black);
+  padding: $default-size * 2;
+}
+
+.customer-photos {
+  display: flex;
+  justify-content: space-evenly;
+
+  img {
+    flex: 1;
+  }
+}
+
+.social-media-content {
+  display: flex;
+  justify-content: $default-position;
+}
+
+@media all and (max-width: 1000px) {
+  .categories,
+  .products,
+  .about,
+  .customer-photos {
+    flex-direction: column;
+  }
+}

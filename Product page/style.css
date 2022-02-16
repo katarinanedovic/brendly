@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@300;500&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -40,11 +39,9 @@ main {
 .types-list {
   list-style-type: none;
 }
-
 .types-list li {
   padding-top: 0.5rem;
 }
-
 .types-list input {
   width: 18px;
   height: 18px;
@@ -60,10 +57,11 @@ main {
 .colors {
   width: 100%;
 }
-
-.dot {
-  width: 40px;
-  height: 30px;
+.colors .dot {
+  display: inline-flex;
+  width: 20px;
+  height: 20px;
+  margin: 0.1rem;
   border-radius: 50%;
 }
 
@@ -71,20 +69,25 @@ main {
 .dot-7 {
   background-color: #000000;
 }
+
 .dot-2,
 .dot-8 {
   background-color: #cccfde;
 }
+
 .dot-3,
 .dot-9 {
   background-color: #5f5f53;
 }
+
 .dot-4 {
   background-color: #a72a2a;
 }
+
 .dot-5 {
   background-color: #429a5b;
 }
+
 .dot-6 {
   background-color: #2f2b64;
 }
@@ -98,16 +101,15 @@ main {
   height: 60px;
   justify-content: space-evenly;
 }
-
 .nav-products li {
   padding-right: 1rem;
   align-self: center;
   padding: 1rem;
   font-size: 16px;
 }
-
-.nav-products li:hover {
+.nav-products li :hover {
   font-weight: bold;
+  cursor: pointer;
 }
 
 .desc {
@@ -143,17 +145,9 @@ main {
   margin: 1rem 0 0 2rem;
   justify-content: center;
 }
-
 .product img {
   justify-content: center;
   margin-left: 1rem;
-}
-
-.colors .dot {
-  display: inline-flex;
-  width: 20px;
-  height: 20px;
-  margin: 0.1ren;
 }
 
 .name {
@@ -170,5 +164,7 @@ main {
 }
 
 .product-price {
-  margin-top: 0.5rem;
+  margin-top: 0.5;
 }
+
+/*# sourceMappingURL=style.css.map */

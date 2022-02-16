@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@300;500&display=swap");
+
+$colors: (
+  black: #000000,
+  white: #ffffff,
+  dirty-white: #cccfde,
+  grey: #5f5f53,
+  red: #a72a2a,
+  light-green: #429a5b,
+  purple: #2f2b64,
+);
+$default-position: center;
+$default-size: 1rem;
+$default-font: "Spartan", sans-serif;
